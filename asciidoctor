@@ -1,0 +1,5 @@
+#!/bin/bash
+#
+ARGS=$(echo "$@" | sed -e 's/--safe//')
+#
+/usr/bin/asciidoctor_real -r asciidoctor-html5s -r asciidoctor-diagram -b html5s $ARGS

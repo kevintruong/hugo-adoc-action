@@ -7,6 +7,8 @@ LABEL "com.github.actions.color"="yellow"
 
 LABEL "repository"="https://github.com/kevintruong/hugo-adoc-action.git"
 LABEL "homepage"="https://github.com/kevintruong/hugo-adoc-action.git"
+RUN mv /usr/bin/asciidoctor /usr/bin/asciidoctor_real
+COPY asciidoctor /usr/bin/asciidoctor
 
 ADD entrypoint.sh /
 RUN chmod +x /entrypoint.sh
