@@ -1,4 +1,4 @@
-FROM kevinelg/hugo-asciidoc
+FROM kevinelg/hugo-asciidoc:latest
 
 LABEL "com.github.actions.name"="git Actions"
 LABEL "com.github.actions.description"="Run hugo commands"
